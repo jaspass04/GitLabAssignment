@@ -8,11 +8,10 @@
 <body>
     <h1>Happy Easter! 🐣</h1>
     <p>Find the hidden Easter eggs on this page!</p>
-    
-    <div class="egg" onclick="alert('You found a chocolate egg! 🍫')"></div>
-    <div class="egg" onclick="document.getElementById('secretBunny').style.display='block'"></div>
-    <div class="egg" onclick="this.style.background='rainbow'"></div>
 
+    <div class="egg" style="background: linear-gradient(45deg, #00BFFF, #1E90FF)" onclick="alert('You found a blue egg! 🍫')"></div>
+    <div class="egg" style="background: linear-gradient(45deg, #32CD32, #008000)" onclick="alert('You found a green egg! 🍫')"></div>
+    <div class="egg" style="background: linear-gradient(45deg, #FFD700, #FFA500)" onclick="alert('You found a golden egg! 🍫')"></div>
     <p class="hidden-basket">🧺 Secret Easter Basket Found! 🧺</p>
     
     <div id="secretBunny">🐰</div>
