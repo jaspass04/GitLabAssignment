@@ -13,6 +13,10 @@ body {
     cursor: pointer;
     transition: transform 0.3s;
 }
+
+.egg:nth-child(2) {
+    background: linear-gradient(45deg, #006400, #228B22);
+}
 .egg:hover {
     transform: scale(1.1);
 }
