@@ -18,12 +18,14 @@
     <div id="secretBunny">🐰</div>
 
     <script>
-        // Easter egg: Konami code reveals rainbow background
         let keys = [];
         document.addEventListener('keydown', (e) => {
             keys.push(e.key);
-            if (keys.join(',').includes('ArrowUp,ArrowUp,ArrowDown,ArrowDown')) {
-                document.body.style.background = 'linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet)';            }
+            if (keys.length > 11) keys.shift();
+            const pattern = 'ArrowUp,ArrowUp,w,w,ArrowUp,ArrowUp,ArrowLeft,ArrowRight,a,d,d';
+            if (keys.join(',') === pattern) {
+                document.body.style.background = 'linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet)';
+            }
         });
     </script>
 </body>
